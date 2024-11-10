@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peta Desa Kedunggede</title>
+
+    <!-- Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css">
+    
+    <!-- Inline Styles -->
+    <style>
+        body {
+            background-color: #8bbcaf;
+            color: #fff;
+            padding-top: 70px;
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #2f4858;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+        }
+
+        #map-container {
+            height: 80vh;
+            border-radius: 8px;
+            margin: 20px auto;
+        }
+
+        .hero-section {
+            background-color: #5d7975;
+            padding: 60px 0;
+            color: #f5f5f5;
+            text-align: center;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #2f4858;
+        }
+
+        .section {
+            padding: 40px 0;
+        }
+
+        .footer {
+            background-color: #2f4858;
+            color: #fff;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand" href="#">Desa Kedunggede</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#map">Peta</a></li>
+                <li class="nav-item"><a class="nav-link" href="#description">Keterangan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Home Section -->
+<div class="hero-section" id="home">
+    <div class="container">
+        <h1 class="display-5">Selamat Datang di Peta Desa Kedunggede</h1>
+        <img src="https://th.bing.com/th/id/OIP.hE56cmJ7Xa3b5lSMBXgvEAHaEK?w=301&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="Desa Kedunggede" class="img-fluid rounded my-4" style="max-width: 100%; height: auto;">
+        <p class="lead" style="text-align: justify;">
+            Desa Kedunggede, yang terletak di Kecamatan Lumbir, Kabupaten Banyumas, merupakan sebuah desa dengan keindahan alam yang menawan. Desa ini dikelilingi oleh hamparan sawah yang hijau, sungai yang mengalir jernih, dan pegunungan yang menjulang, menciptakan panorama alam yang menenangkan. Selain menawarkan pemandangan alam yang mempesona, Desa Kedunggede juga dikenal akan keramahan penduduknya yang menyambut setiap pengunjung dengan hangat.
+            <br><br>
+            Kehidupan di Kedunggede dipenuhi dengan semangat gotong royong dan kebersamaan yang kuat. Penduduk desa saling membantu dalam berbagai aspek kehidupan, mulai dari kegiatan pertanian hingga acara-acara budaya. Desa ini juga mempertahankan tradisi dan budaya yang telah diwariskan dari generasi ke generasi. Di Kedunggede, pengunjung dapat merasakan kehidupan pedesaan yang autentik, di mana nilai-nilai kekeluargaan dan kebersamaan menjadi fondasi utama dalam kehidupan masyarakat sehari-hari.
+            <br><br>
+            Desa ini terdiri dari beberapa Rukun Warga (RW) dan Rukun Tetangga (RT) yang memiliki karakteristik tersendiri. Setiap wilayahnya menawarkan keunikan, mulai dari lahan pertanian yang subur hingga kawasan permukiman yang tertata rapi. Dengan kehidupan yang sederhana namun sarat makna, Kedunggede menjadi tempat yang ideal bagi mereka yang mencari ketenangan dan ingin menikmati suasana pedesaan yang asri.
+        </p>
+    </div>
+</div>
+
+<!-- Map Section -->
+<section id="map" class="section bg-light">
+    <div class="container">
+        <h2 class="section-title">Peta Desa Kedunggede</h2>
+        <div id="map-container">
+            <iframe src="Peta.html" frameborder="0" style="width: 100%; height: 100%;"></iframe>
+        </div>
+    </div>
+</section>
+
+<!-- Description Section -->
+<section id="description" class="section bg-secondary text-light">
+    <div class="container">
+        <h2 class="section-title">Keterangan</h2>
+        <p style="text-align: justify;">
+            Peta interaktif Desa Kedunggede ini dibuat untuk memudahkan masyarakat dan pengunjung dalam mengenali serta menavigasi wilayah desa. Dengan peta ini, setiap pengguna dapat dengan mudah menemukan lokasi-lokasi penting seperti balai desa, tempat ibadah, sekolah, pasar tradisional, dan pusat kegiatan masyarakat. Peta ini memberikan panduan yang terstruktur, sehingga memudahkan siapa saja untuk memahami tata letak dan aksesibilitas di seluruh desa.
+            <br><br>
+            Selain membantu dalam orientasi, peta ini juga berfungsi sebagai sarana edukasi bagi penduduk maupun pengunjung. Peta ini menampilkan informasi tentang area persawahan, perkebunan, dan lokasi usaha masyarakat yang menjadi bagian penting dari ekonomi desa. Dengan ini, pengunjung dapat lebih mengenal kehidupan ekonomi desa yang sebagian besar masih bergantung pada hasil pertanian dan perkebunan.
+            <br><br>
+            Diharapkan dengan adanya peta ini, baik masyarakat setempat maupun pengunjung dapat lebih memahami potensi yang dimiliki oleh Desa Kedunggede. Mulai dari kekayaan alam hingga budaya dan fasilitas umum, semuanya telah disusun dalam peta ini untuk memberikan gambaran yang komprehensif mengenai desa ini.
+        </p>
+    </div>
+</section>     
+
+<!-- About Section -->
+<section id="about" class="section bg-primary text-white">
+    <div class="container">
+        <h2 class="section-title">Tentang Peta Ini</h2>
+        <p style="text-align: justify;">
+            Peta interaktif Desa Kedunggede ini dirancang untuk memberikan pemahaman yang mendalam tentang struktur dan tata letak desa. Selain membantu navigasi, peta ini juga memperlihatkan bagaimana masyarakat Desa Kedunggede menjaga keseimbangan antara pembangunan dan kelestarian alam. Setiap ikon pada peta mewakili fasilitas penting dan lokasi yang sering dikunjungi, seperti pusat kegiatan, balai desa, dan area pertanian.
+            <br><br>
+            Kami berharap peta ini dapat memberikan pandangan yang lebih luas tentang kehidupan di desa ini. Pengguna dapat menelusuri area permukiman, persawahan, perkebunan, dan fasilitas umum dengan lebih mudah. Selain itu, peta ini juga menampilkan jalur transportasi utama yang menghubungkan setiap sudut desa, sehingga memudahkan akses baik bagi penduduk maupun wisatawan.
+            <br><br>
+            Dengan peta ini, kami berusaha menciptakan alat yang tidak hanya berguna untuk navigasi, tetapi juga memberikan pemahaman akan nilai-nilai yang dijunjung tinggi oleh masyarakat Kedunggede. Di desa ini, setiap pengunjung dapat merasakan atmosfer hidup yang harmonis antara masyarakat dengan alam sekitarnya. Kami juga berharap peta ini dapat menginspirasi desa lain dalam meningkatkan aksesibilitas dan pemahaman tentang wilayah mereka sendiri.
+            <br><br>
+            Peta interaktif ini bukan sekadar alat navigasi, tetapi juga sarana untuk menghargai kekayaan budaya, sejarah, dan nilai kehidupan di Desa Kedunggede. Dengan akses yang mudah ke setiap informasi yang relevan, peta ini bertujuan memberikan pengalaman yang bermakna bagi siapa saja yang tertarik untuk mengetahui lebih dalam tentang desa ini.
+        </p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <p>&copy; 2024 Peta Desa Kedunggede. Dibuat oleh Anggoro M.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
